@@ -2,3 +2,5 @@
 .classpath
 build.xml
 .project
+.settings/
+.classes/*

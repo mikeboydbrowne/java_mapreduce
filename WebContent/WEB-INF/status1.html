@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MapReduce Interface</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h1 style="text-align: center; margin-top: 50px;">User Page</h1>
+				<div class="col-md-4" style="border-right: 1px #999 solid">
+					<div style="text-align: center; margin-bottom: 50px;">
+						Click <a href="/HW2/xpath/logout" method="post">here</a> to logout
+					</div>
+					<div style="text-align: center; border-top: 1px #999 solid">
+						<h4>Add a MapReduce Job</h4>
+						<form class="form-inline" style="margin-top: -20px"
+							action="addChannel" method="post">
+							<table class="table">
+								<tbody>
+									<div class="form-group">
+										<tr>
+											<td style="border: none"><label for="name"
+												style="margin-top: 6px">Name</label></td>
+											<td style="border: none"><input type="text"
+												class="form-control" id="name" name="name" placeholder=""
+												required="" style="width: 100%"></td>
+										</tr>
+										<tr>
+											<td style="border: none"><label for="xpath"
+												style="margin-top: 6px">XPaths</label></td>
+											<td style="border: none"><input type="text"
+												class="form-control" id="xpaths" name="xpaths"
+												placeholder="" required="" style="width: 100%"></td>
+										</tr>
+										<tr>
+											<td style="border: none"><label for="xpath"
+												style="margin-top: 6px">URL</label></td>
+											<td style="border: none"><input type="text"
+												class="form-control" id="url" name="url" placeholder=""
+												required="" style="width: 100%"></td>
+										</tr>
+									</div>
+								</tbody>
+							</table>
+							<!-- Submit Button -->
+							<div class="control-group"
+								style="text-align: center; margin-top: -30px">
+								<label class="control-label" for="login"></label>
+								<div class="controls">
+									<button id="login" name="login" class="btn btn-primary"
+										href="login">Add Channel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-8" style="">
+					<h4
+						style="text-align: center; border-bottom: 1px #999 solid; padding-bottom: 5px">Existing
+						Channels</h4>
