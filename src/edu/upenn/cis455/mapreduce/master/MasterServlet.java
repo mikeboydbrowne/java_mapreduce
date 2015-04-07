@@ -18,12 +18,13 @@ public class MasterServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws java.io.IOException {
 		// code from original file
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.println("<html><head><title>Master</title></head>");
-		out.println("<body>Hi, I am the master!</body></html>");
+//		response.setContentType("text/html");
+//		PrintWriter out = response.getWriter();
+//		out.println("<html><head><title>Master</title></head>");
+//		out.println("<body>Hi, I am the master!</body></html>");
 
 		String reqPath = request.getPathInfo();
+		System.out.println(reqPath);
 		// parsing info sent by worker
 		if (reqPath.equalsIgnoreCase("/workerstatus")) {
 			String[] workerUpdate = request.getQueryString().split("&");
